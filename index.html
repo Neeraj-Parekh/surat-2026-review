@@ -196,6 +196,7 @@
   var barWrap = document.getElementById('barWrap');
   var barEl = document.getElementById('bar');
   var busy = false;
+  var cachedBuf = null;
 
   function setStatus(text, kind) {
     statusEl.textContent = text;
@@ -211,11 +212,15 @@
   });
 
   function fetchEncrypted() {
+    if (cachedBuf) return Promise.resolve(cachedBuf);
     return fetch(FILE, { cache: 'no-cache' }).then(function (res) {
       if (!res.ok) throw new Error('HTTP ' + res.status);
       var total = Number(res.headers.get('content-length') || 0);
       if (!res.body || !total) {
-        return res.arrayBuffer().then(function (buf) { return new Uint8Array(buf); });
+        return res.arrayBuffer().then(function (buf) {
+          cachedBuf = new Uint8Array(buf);
+          return cachedBuf;
+        });
       }
       var reader = res.body.getReader();
       var chunks = [];
@@ -227,6 +232,7 @@
             var out = new Uint8Array(got);
             var off = 0;
             chunks.forEach(function (c) { out.set(c, off); off += c.length; });
+            cachedBuf = out;
             return out;
           }
           chunks.push(step.value);
