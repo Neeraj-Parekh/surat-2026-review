@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b63b6'/%3E%3Cpath d='M7 21c4.5-9 13.5-9 18 0' fill='none' stroke='%23ffffff' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<title>Surat 2026 independent labelling</title>
+<style>
+  :root {
+    --bg: #f3f6f8;
+    --card: #ffffff;
+    --ink: #17212b;
+    --muted: #5c6b79;
+    --line: #d7dfe6;
+    --accent: #0b63b6;
+    --accent-dark: #084a8a;
+    --good: #1d7a45;
+    --bad: #b3261e;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 24px 16px 48px;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  header { margin: 0 0 18px; }
+  .eyebrow {
+    margin: 0 0 4px;
+    color: var(--accent);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  h1 { margin: 0 0 8px; font-size: 1.75rem; line-height: 1.2; }
+  h2 { margin: 0 0 10px; font-size: 1.05rem; }
+  .lede { margin: 0; color: var(--muted); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 18px;
+    margin: 0 0 14px;
+    box-shadow: 0 1px 2px rgba(23, 33, 43, 0.04);
+  }
+  .steps { margin: 0 0 10px; padding-left: 1.3em; }
+  .steps li { margin: 0 0 9px; padding-left: 4px; }
+  .steps li:last-child { margin-bottom: 0; }
+  .meta { margin: 10px 0 0; color: var(--muted); font-size: 0.9rem; }
+  label { display: block; margin: 0 0 6px; font-weight: 650; font-size: 0.92rem; }
+  .row { display: flex; flex-wrap: wrap; gap: 10px; }
+  input[type="password"], input[type="text"] {
+    flex: 1 1 240px;
+    min-height: 48px;
+    padding: 10px 12px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: #fbfcfd;
+    color: var(--ink);
+    font: inherit;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  input:focus {
+    outline: 3px solid rgba(11, 99, 182, 0.18);
+    border-color: var(--accent);
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 10px 22px;
+    border-radius: 10px;
+    border: 1px solid var(--accent);
+    background: var(--accent);
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .btn:hover { background: var(--accent-dark); }
+  .btn:active { transform: translateY(1px); }
+  .btn:disabled { opacity: 0.55; cursor: not-allowed; }
+  .status { min-height: 1.4em; margin-top: 10px; font-size: 0.92rem; font-weight: 600; }
+  .status.bad { color: var(--bad); }
+  .status.good { color: var(--good); }
+  .bar {
+    height: 8px;
+    margin-top: 10px;
+    border-radius: 999px;
+    background: #e8edf2;
+    overflow: hidden;
+  }
+  .bar-fill {
+    width: 0;
+    height: 100%;
+    border-radius: 999px;
+    background: var(--accent);
+    transition: width 0.15s linear;
+  }
+  .show {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 10px;
+    color: var(--muted);
+    font-size: 0.86rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .show input { width: 16px; height: 16px; }
+  .note ul { margin: 0; padding-left: 1.2em; }
+  .note li { margin: 0 0 7px; }
+  .note li:last-child { margin-bottom: 0; }
+  footer {
+    margin-top: 18px;
+    color: var(--muted);
+    font-size: 0.86rem;
+    text-align: center;
+  }
+  a { color: var(--accent); }
+  @media (max-width: 460px) {
+    body { padding: 18px 12px 36px; }
+    h1 { font-size: 1.5rem; }
+    .card { padding: 15px; }
+    .btn { width: 100%; }
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <p class="eyebrow">Surat 2026 flood mapping</p>
+    <h1>Independent labelling</h1>
+    <p class="lede">Thank you for helping. You are independently labelling 50 validation points. Your answers are compared with the primary labels to measure how reproducible the labelling protocol is.</p>
+  </header>
+
+  <section class="card">
+    <h2>What I need you to do</h2>
+    <ol class="steps">
+      <li><strong>Enter the passcode</strong> I sent you separately, then open the app.</li>
+      <li><strong>Enter your name</strong> on the start screen.</li>
+      <li><strong>Try the practice point first.</strong> Its answer is revealed after you choose a class and confidence.</li>
+      <li><strong>Label all 50 points.</strong> Use the Sentinel-1 radar evidence. The Sentinel-2 chip and the Google Maps views are land-use context only. Progress saves automatically in this browser.</li>
+      <li><strong>Download the CSV</strong> at the end and email it to <a href="mailto:neerajparekh118@gmail.com">neerajparekh118@gmail.com</a>.</li>
+    </ol>
+    <p class="meta">About 30 to 45 minutes. Please work independently: do not look at the primary labels or ask anyone else to label the points.</p>
+  </section>
+
+  <section class="card">
+    <h2>Open the labelling app</h2>
+    <label for="pass">Passcode</label>
+    <div class="row">
+      <input id="pass" type="password" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="XXXX-XXXX-XXXX" aria-describedby="status">
+      <button id="openBtn" class="btn" type="button">Open</button>
+    </div>
+    <label class="show" for="showPass"><input id="showPass" type="checkbox"> Show passcode</label>
+    <div id="status" class="status" role="status" aria-live="polite"></div>
+    <div id="barWrap" class="bar" hidden><div id="bar" class="bar-fill"></div></div>
+  </section>
+
+  <section class="card note">
+    <h2>Before you start</h2>
+    <ul>
+      <li>The app runs entirely in your browser. Nothing is uploaded.</li>
+      <li>Use an updated Chrome, Edge, Firefox or Safari. A laptop or tablet is easier than a phone.</li>
+      <li>You need a connection to open the app and for the <strong>Open in Google Maps</strong> button. The labelling screens make no further requests.</li>
+      <li>If you refresh, your answers are still saved. You will need the passcode again.</li>
+      <li>Please do not share this link or the passcode.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Questions: <a href="mailto:neerajparekh118@gmail.com">neerajparekh118@gmail.com</a></p>
+  </footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var FILE = 'app.enc';
+  var passEl = document.getElementById('pass');
+  var showEl = document.getElementById('showPass');
+  var openBtn = document.getElementById('openBtn');
+  var statusEl = document.getElementById('status');
+  var barWrap = document.getElementById('barWrap');
+  var barEl = document.getElementById('bar');
+  var busy = false;
+
+  function setStatus(text, kind) {
+    statusEl.textContent = text;
+    statusEl.className = 'status' + (kind ? ' ' + kind : '');
+  }
+
+  function normalize(value) {
+    return value.toUpperCase().replace(/[^A-Z0-9]/g, '');
+  }
+
+  showEl.addEventListener('change', function () {
+    passEl.type = showEl.checked ? 'text' : 'password';
+  });
+
+  function fetchEncrypted() {
+    return fetch(FILE, { cache: 'no-cache' }).then(function (res) {
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      var total = Number(res.headers.get('content-length') || 0);
+      if (!res.body || !total) {
+        return res.arrayBuffer().then(function (buf) { return new Uint8Array(buf); });
+      }
+      var reader = res.body.getReader();
+      var chunks = [];
+      var got = 0;
+      barWrap.hidden = false;
+      function pump() {
+        return reader.read().then(function (step) {
+          if (step.done) {
+            var out = new Uint8Array(got);
+            var off = 0;
+            chunks.forEach(function (c) { out.set(c, off); off += c.length; });
+            return out;
+          }
+          chunks.push(step.value);
+          got += step.value.length;
+          var pct = Math.min(100, Math.round((got / total) * 100));
+          barEl.style.width = pct + '%';
+          setStatus('Downloading the app... ' + pct + '%');
+          return pump();
+        });
+      }
+      return pump();
+    });
+  }
+
+  function decrypt(buf, pass) {
+    var magic = new TextDecoder().decode(buf.subarray(0, 4));
+    if (magic !== 'SRT1') throw new Error('unrecognised app file');
+    var view = new DataView(buf.buffer, buf.byteOffset, buf.byteLength);
+    var iterations = view.getUint32(8, false);
+    var salt = buf.subarray(12, 28);
+    var iv = buf.subarray(28, 40);
+    var ciphertext = buf.subarray(40);
+    var encoder = new TextEncoder();
+    return crypto.subtle.importKey(
+      'raw', encoder.encode(pass), 'PBKDF2', false, ['deriveKey']
+    ).then(function (material) {
+      return crypto.subtle.deriveKey(
+        { name: 'PBKDF2', salt: salt, iterations: iterations, hash: 'SHA-256' },
+        material,
+        { name: 'AES-GCM', length: 256 },
+        false,
+        ['decrypt']
+      );
+    }).then(function (key) {
+      return crypto.subtle.decrypt({ name: 'AES-GCM', iv: iv }, key, ciphertext);
+    }).then(function (plain) {
+      return new TextDecoder().decode(plain);
+    });
+  }
+
+  function openApp() {
+    if (busy) return;
+    var pass = normalize(passEl.value);
+    if (!pass) {
+      setStatus('Enter the passcode first.', 'bad');
+      passEl.focus();
+      return;
+    }
+    if (!window.crypto || !window.crypto.subtle) {
+      setStatus('This browser cannot open the app. Try a current Chrome, Edge, Firefox or Safari.', 'bad');
+      return;
+    }
+    busy = true;
+    openBtn.disabled = true;
+    passEl.disabled = true;
+    setStatus('Preparing...');
+    fetchEncrypted().then(function (buf) {
+      setStatus('Unlocking...');
+      return decrypt(buf, pass);
+    }).then(function (html) {
+      document.open();
+      document.write(html);
+      document.close();
+    }).catch(function (err) {
+      busy = false;
+      openBtn.disabled = false;
+      passEl.disabled = false;
+      barWrap.hidden = true;
+      barEl.style.width = '0';
+      var name = err && err.name ? String(err.name) : '';
+      var msg = err && err.message ? String(err.message) : '';
+      if (name === 'OperationError' || name === 'DataError') {
+        setStatus('That passcode did not work. Check it and try again.', 'bad');
+      } else if (msg.indexOf('HTTP') === 0) {
+        setStatus('The app file could not be downloaded. Check your connection and reload.', 'bad');
+      } else {
+        setStatus('Something went wrong. Reload the page and try again.', 'bad');
+      }
+      passEl.focus();
+      passEl.select();
+    });
+  }
+
+  openBtn.addEventListener('click', openApp);
+  passEl.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') openApp();
+  });
+})();
+</script>
+</body>
+</html>
